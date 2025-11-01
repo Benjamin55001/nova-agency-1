@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NOVA Web Agency — Global Web Development & Design</title>
+  <meta name="description" content="NOVA Web Agency builds blazing-fast, accessible, and conversion-driven websites — websites, web apps, eCommerce, PWAs, and performance-first solutions." />
+  <meta name="theme-color" content="#0b1020" />
+
+  <!-- Performance: use system font stack with an optional Google font fallback -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NOVA Web Agency",
+    "url": "https://nova.example",
+    "logo": "https://nova.example/logo.svg",
+    "sameAs": [],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "hello@nova.example"
+    }]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="NOVA Web Agency home">
+        <!-- Minimal SVG logo -->
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7b61ff"/><stop offset="1" stop-color="#00d4ff"/></linearGradient></defs>
+          <rect width="24" height="24" rx="6" fill="url(#g)"></rect>
+          <path d="M7 16 L12 8 L17 16 Z" fill="white"></path>
+        </svg>
+        <span class="brand-name">NOVA</span>
+      </a>
+
+      <nav class="site-nav" role="navigation" aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-ctas">
+        <a class="btn ghost" href="#contact">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>We build fast, scalable & delightful web experiences.</h1>
+          <p class="lead">NOVA Web Agency designs and codes websites, web apps and eCommerce stores with performance, accessibility and conversion at the core. We ship polished digital products that scale.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#work">See Our Work</a>
+            <a class="btn ghost" href="#contact">Start a Project</a>
+          </div>
+
+          <ul class="trust-list" aria-hidden="true">
+            <li><strong>99%+</strong> uptime</li>
+            <li><strong>200ms</strong> average TTFB</li>
+            <li><strong>WCAG</strong> accessible builds</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Stylized code-like mockup using SVG for speed -->
+          <svg viewBox="0 0 600 420" class="device" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="hg" x1="0" x2="1"><stop offset="0" stop-color="#0f1724"/><stop offset="1" stop-color="#071029"/></linearGradient>
+            </defs>
+            <rect x="12" y="12" width="576" height="396" rx="18" fill="url(#hg)" stroke="#081223" stroke-width="2"/>
+            <g transform="translate(36,36)">
+              <rect width="504" height="60" rx="8" fill="#081225"></rect>
+              <rect y="86" width="504" height="260" rx="8" fill="#071428"></rect>
+              <rect x="12" y="98" width="160" height="16" rx="6" fill="#0b9bd6"></rect>
+              <rect x="12" y="124" width="420" height="12" rx="6" fill="#0b9bd6" opacity="0.2"></rect>
+              <rect x="12" y="148" width="340" height="10" rx="6" fill="#8bdcff" opacity="0.12"></rect>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title" class="section-title">What we do</h2>
+        <p class="section-sub">Full-stack web development services — tailored to product-market fit and growth.</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Websites & CMS</h3>
+            <p>Marketing websites, content platforms and WordPress builds that convert and are easy to manage.</p>
+            <ul class="card-features">
+              <li>SEO-first architecture</li>
+              <li>Custom CMS integrations</li>
+              <li>Headless & hybrid setups</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>eCommerce & Stores</h3>
+            <p>WooCommerce, Shopify and custom eCommerce experiences optimized for conversion and speed.</p>
+            <ul class="card-features">
+              <li>Fast checkouts</li>
+              <li>Inventory & 3rd-party integrations</li>
+              <li>Subscription & headless carts</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Web Apps & SaaS</h3>
+            <p>Robust single-page apps, progressive web apps (PWAs), and scalable server-side architectures.</p>
+            <ul class="card-features">
+              <li>React / Next.js / Remix</li>
+              <li>APIs, auth & subscriptions</li>
+              <li>Observability & CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Performance & Audits</h3>
+            <p>Site speed, Core Web Vitals optimization, and accessibility audits to boost conversions.</p>
+            <ul class="card-features">
+              <li>Vercel / Netlify optimizations</li>
+              <li>Image & asset strategies</li>
+              <li>Accessibility fixes</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK / PORTFOLIO -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="container">
+        <h2 id="work-title" class="section-title">Selected Work</h2>
+        <p class="section-sub">Clean, performant launches — a snapshot of recent projects.</p>
+
+        <div class="projects-grid">
+          <!-- Project card 1 -->
+          <article class="project">
+            <div class="project-meta">
+              <span class="tag">eCommerce</span>
+              <h3>Reef & Root — Clean eCommerce</h3>
+              <p class="muted">Fast-store build; WebP images & optimized checkout flow.</p>
+            </div>
+            <div class="project-cta">
+              <a class="btn small" href="#" aria-label="View case study Reef & Root">Case study</a>
+            </div>
+          </article>
+
+          <!-- Project card 2 -->
+          <article class="project">
+            <div class="project-meta">
+              <span class="tag">SaaS</span>
+              <h3>PulseTrack App</h3>
+              <p class="muted">Realtime analytics dashboard built with React & serverless APIs.</p>
+            </div>
+            <div class="project-cta">
+              <a class="btn small" href="#">Case study</a>
+            </div>
+          </article>
+
+          <!-- Project card 3 -->
+          <article class="project">
+            <div class="project-meta">
+              <span class="tag">Brand</span>
+              <h3>Endvre — Rebrand & Site</h3>
+              <p class="muted">Branding-led site with storytelling & accessible markup.</p>
+            </div>
+            <div class="project-cta">
+              <a class="btn small" href="#">Case study</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDY HIGHLIGHT -->
+    <section class="section highlight" aria-hidden="false">
+      <div class="container highlight-grid">
+        <div>
+          <h2>Performance-first delivery</h2>
+          <p class="lead">We reduced a client's LCP from 3.8s to 0.9s and increased conversion by 27% — through image optimization, code-splitting, and server-side caching.</p>
+          <a class="btn primary" href="#services">How we do it</a>
+        </div>
+        <div aria-hidden="true">
+          <svg viewBox="0 0 220 140" class="chart">
+            <rect x="8" y="8" width="204" height="124" rx="8" fill="#071025"></rect>
+            <rect x="20" y="30" width="40" height="80" rx="4" fill="#7b61ff"></rect>
+            <rect x="72" y="18" width="40" height="92" rx="4" fill="#00d4ff"></rect>
+            <rect x="124" y="10" width="40" height="100" rx="4" fill="#6ef5c6"></rect>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title" class="section-title">Pricing</h2>
+        <p class="section-sub">Simple & transparent pricing. Need custom scope? We’ll tailor a plan.</p>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Starter</h3>
+            <p class="price">$1,500<span>/one-off</span></p>
+            <ul>
+              <li>Landing page</li>
+              <li>Basic SEO</li>
+              <li>2-week launch</li>
+            </ul>
+            <a class="btn ghost" href="#contact">Choose</a>
+          </div>
+
+          <div class="pricing-card popular">
+            <h3>Growth</h3>
+            <p class="price">$5,500<span>/project</span></p>
+            <ul>
+              <li>5–7 page site</li>
+              <li>Performance optimization</li>
+              <li>2 months support</li>
+            </ul>
+            <a class="btn primary" href="#contact">Choose</a>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Scale</h3>
+            <p class="price">Custom<span>/enterprise</span></p>
+            <ul>
+              <li>eCommerce / SaaS</li>
+              <li>Architecture & reliability</li>
+              <li>Dedicated team</li>
+            </ul>
+            <a class="btn ghost" href="#contact">Talk to us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section" aria-labelledby="team-title">
+      <div class="container">
+        <h2 id="team-title" class="section-title">Team</h2>
+        <p class="section-sub">A small, experienced team focused on quality and delivery.</p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="avatar" aria-hidden="true">MJ</div>
+            <h4>Moyo Ajayi</h4>
+            <p class="muted">Founder / Lead Developer</p>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar" aria-hidden="true">SA</div>
+            <h4>Sara Omole</h4>
+            <p class="muted">Product Designer</p>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar" aria-hidden="true">AZ</div>
+            <h4>Azeem Bello</h4>
+            <p class="muted">DevOps & Performance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title" class="section-title">What clients say</h2>
+        <div class="test-grid">
+          <blockquote>
+            <p>"NOVA delivered a stunning site on time — and our load times halved. The team's clarity and delivery are outstanding."</p>
+            <cite>— Jordan P., Founder</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>"They handled our complex product catalog flawlessly and integrated subscriptions with a smooth UX."</p>
+            <cite>— Kayla M., Head of Ops</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section class="section blog" aria-labelledby="blog-title">
+      <div class="container">
+        <h2 id="blog-title" class="section-title">Insights</h2>
+        <div class="blog-grid">
+          <article class="mini-card">
+            <h4>Optimizing Largest Contentful Paint</h4>
+            <p class="muted">Tactics we use to shave seconds off page load and improve conversion.</p>
+            <a href="#" class="link small">Read →</a>
+          </article>
+
+          <article class="mini-card">
+            <h4>Accessible Components</h4>
+            <p class="muted">Small changes that improve inclusivity and usability for everyone.</p>
+            <a href="#" class="link small">Read →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-title" class="section-title">Let's build together</h2>
+          <p class="lead">Tell us about your project and timeline — we respond within 24 hours.</p>
+
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:hello@nova.example">hello@nova.example</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li><strong>Location:</strong> Remote — global</li>
+          </ul>
+
+          <div class="social-inline" aria-hidden="true">
+            <a href="#" class="chip">GitHub</a>
+            <a href="#" class="chip">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="mailto:hello@nova.example" method="post" enctype="text/plain" aria-label="Contact form">
+          <label>
+            <span class="label-text">Your name</span>
+            <input name="name" required>
+          </label>
+
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            <span class="label-text">Project brief</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <strong>NOVA Web Agency</strong>
+          <p class="muted">Performance-first web development</p>
+        </div>
+        <nav aria-label="Footer links">
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="legal">
+          <p class="muted">© <span id="year"></span> NOVA Web Agency • Built with care</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
